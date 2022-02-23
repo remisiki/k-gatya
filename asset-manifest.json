@@ -1,22 +1,23 @@
 {
   "files": {
-    "app.js": "/k-gatya/static/js/app.3b62596b.chunk.js",
-    "app.js.map": "/k-gatya/static/js/app.3b62596b.chunk.js.map",
+    "app.js": "/k-gatya/static/js/app.380d0677.chunk.js",
+    "app.js.map": "/k-gatya/static/js/app.380d0677.chunk.js.map",
     "runtime~app.js": "/k-gatya/static/js/runtime~app.00f24492.js",
     "runtime~app.js.map": "/k-gatya/static/js/runtime~app.00f24492.js.map",
-    "static/js/2.d4feee8f.chunk.js": "/k-gatya/static/js/2.d4feee8f.chunk.js",
-    "static/js/2.d4feee8f.chunk.js.map": "/k-gatya/static/js/2.d4feee8f.chunk.js.map",
+    "static/js/2.f3b393c7.chunk.js": "/k-gatya/static/js/2.f3b393c7.chunk.js",
+    "static/js/2.f3b393c7.chunk.js.map": "/k-gatya/static/js/2.f3b393c7.chunk.js.map",
     "favicon-16.png": "/k-gatya/favicon-16.png",
     "favicon-32.png": "/k-gatya/favicon-32.png",
     "favicon.ico": "/k-gatya/favicon.ico",
     "index.html": "/k-gatya/index.html",
     "manifest.json": "/k-gatya/manifest.json",
     "serve.json": "/k-gatya/serve.json",
-    "static/js/2.d4feee8f.chunk.js.LICENSE.txt": "/k-gatya/static/js/2.d4feee8f.chunk.js.LICENSE.txt"
+    "static/js/2.f3b393c7.chunk.js.LICENSE.txt": "/k-gatya/static/js/2.f3b393c7.chunk.js.LICENSE.txt",
+    "static/media/background.webp": "/k-gatya/static/media/background.cdd61a77.webp"
   },
   "entrypoints": [
     "static/js/runtime~app.00f24492.js",
-    "static/js/2.d4feee8f.chunk.js",
-    "static/js/app.3b62596b.chunk.js"
+    "static/js/2.f3b393c7.chunk.js",
+    "static/js/app.380d0677.chunk.js"
   ]
 }
