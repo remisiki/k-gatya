@@ -60,6 +60,7 @@ function Refresh() {
 }
 
 function GalleryScreen() {
+  const screen_width = window.innerWidth;
   const [state, setState] = useState('out');
   const stateHandler = (state) => {
     setState(state);
@@ -102,7 +103,12 @@ function GalleryScreen() {
       </section>
       <div className="photo_container">
         {lists && lists.data.map((value, index) => {
-          return <Img src={compress(value.urls.regular)} key={`photo${index}`} handler={stateHandler} index={index} />;
+          if (screen_width <= 425) {
+            return <Img src={value.urls.regular.replace("cat", "re")} key={`photo${index}`} handler={stateHandler} index={index} />;
+          }
+          else {
+            return <Img src={compress(value.urls.regular)} key={`photo${index}`} handler={stateHandler} index={index} />;
+          }
         })}
       </div>
       {state !== 'out' && 
