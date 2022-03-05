@@ -31,7 +31,7 @@ function Description({info}) {
 }
 
 async function fetchLoli(loli = false, r18 = false) {
-  const url = "https://remisiki.herokuapp.com/";
+  const url = "https://remisiki.herokuapp.com/api/v1/k-gatya";
   // const url = "http://192.168.0.112:9000/";
   let args = {
     "size": "regular",
