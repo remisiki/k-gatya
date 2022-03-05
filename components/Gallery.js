@@ -31,8 +31,12 @@ function Description({info}) {
 }
 
 async function fetchLoli(loli = false, r18 = false) {
-  const url = "https://k-gatya.herokuapp.com/";
-  let args = {};
+  const url = "https://remisiki.herokuapp.com/";
+  // const url = "http://192.168.0.112:9000/";
+  let args = {
+    "size": "regular",
+    "num": 15
+  };
   if (loli) {
     args.args = "loli";
   }
@@ -45,6 +49,10 @@ async function fetchLoli(loli = false, r18 = false) {
 
 function compress(url) {
   return ("https://i.pixiv.re/c/250x250_80_a2" + url.replace("https://i.pixiv.cat", "").replace("master1200", "square1200"));
+}
+
+function compress_phone(url) {
+  return ("https://i.pixiv.re/c/540x540_70" + url.replace("https://i.pixiv.cat", ""));
 }
 
 function source(url) {
@@ -104,7 +112,7 @@ function GalleryScreen() {
       <div className="photo_container">
         {lists && lists.data.map((value, index) => {
           if (screen_width <= 425) {
-            return <Img src={value.urls.regular.replace("cat", "re")} key={`photo${index}`} handler={stateHandler} index={index} />;
+            return <Img src={compress_phone(value.urls.regular)} key={`photo${index}`} handler={stateHandler} index={index} />;
           }
           else {
             return <Img src={compress(value.urls.regular)} key={`photo${index}`} handler={stateHandler} index={index} />;
